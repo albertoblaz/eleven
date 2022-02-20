@@ -1,0 +1,68 @@
+{
+  "name": "eleven",
+  "version": "1.0.0",
+  "description": "An accessible, unstyled, unopinionated Design System implemented with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn clean; yarn env; yarn build:ts",
+    "build:ts": "tsc --build",
+    "build:storybook": "build-storybook",
+    "clean": "rm -rf build *.tsbuildinfo",
+    "env": "echo NODE_ENV=$NODE_ENV",
+    "format": "prettier-eslint --write '**/*.{ts,tsx,js,jsx}'",
+    "lint": "eslint . --ext js,jsx,ts,tsx --quiet",
+    "lint:warnings": "eslint . --ext js,jsx,ts,tsx",
+    "publish": "yarn build --production",
+    "start": "start-storybook -p 6006",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertoblaz/eleven.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertoblaz/eleven/issues"
+  },
+  "homepage": "https://github.com/albertoblaz/eleven#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@planview/pv-icons": "^2.2.0",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.0.0",
+    "@types/jest": "^27.4.1",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "babel-jest": "^27.5.1",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^5.2.7",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "^27.5.1",
+    "jest-css-modules": "^2.1.0",
+    "prettier-eslint-cli": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "styled-components": "^5.3.3",
+    "typescript": "^4.5.5"
+  }
+}
