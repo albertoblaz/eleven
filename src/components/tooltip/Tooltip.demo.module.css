@@ -1,0 +1,56 @@
+[role='tooltip'][hidden] {
+    display: none;
+}
+
+.tooltip {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 1em;
+    max-width: 300px;
+    overflow: hidden;
+
+    background-color: #1f2532;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+
+    font-family: system-ui;
+    font-size: 13px;
+    word-wrap: break-word;
+}
+
+.button {
+    appearance: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+
+    position: relative;
+
+    background-color: #608eb6;
+    border-radius: 2px;
+}
+
+.count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+
+    background-color: #d56261;
+    border-radius: 100%;
+    color: #fff;
+
+    font-family: system-ui;
+    font-size: 13px;
+}
