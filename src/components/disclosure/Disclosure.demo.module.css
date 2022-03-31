@@ -1,0 +1,29 @@
+.disclosure > h2 {
+    margin: 0;
+}
+.disclosure > div:not([hidden]) {
+    margin: 0;
+    padding: 1em;
+    background: #ccc;
+}
+
+.disclosure__btn {
+    appearance: none;
+    border: none;
+    height: 36px;
+    padding: 5px 16px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 4px;
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: bold;
+}
+.disclosure__btn[aria-pressed='true'] {
+    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.disclosure__body {
+    margin: 0;
+    padding: 0;
+}
